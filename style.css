@@ -1,0 +1,78 @@
+/* las buenas practicas es poner las carpetas en minusculas */
+/* selector universal */
+* {
+    font-family: Georgia, serif;
+}
+
+/* selector de etiquetas:
+Ocupa el nombre de la etiqueta y modifica todas las ocurrencias (todos los nombre iguales). */
+body {
+    background-color: blanchedalmond;
+    padding:0.5em 0em 0em 0.5em;
+}
+
+/* las hojas de stilos el css se van a ordenar por gerarquias 
+como nota: si agragamos un estilo dentro de la linea del html 
+es como forzarlo, y es tomado como mala practica del no saber de estilos*/
+/* lo probamos con la p/ parafos */
+
+/* p{
+    color: aquamarine;
+} */
+
+/* Selector de clase:
+Vamos a cambiar a toodos los elementos que tengan esa clase, 
+para que todo lo que tenga la misma clase tenga el mismo formato. */
+
+/* selecionamos la clase para que sean esos elementos en conjunto */
+.libros {
+    border: 10px solid #000;
+    width: 600px;
+    height: 600px;
+}
+
+/* el alto y el ancho ya los habiamos agregado en la hoja de html
+pero ahi solo funciona como un atributo, pq siempre ganara la hoja de estilos
+asi que podemos eliminar el atributo del html */
+
+/* este primer texto centrado funciono para todos los parrafos */
+
+/* p{ 
+    text-align: center;
+} */
+
+/* aqui creamos una etiqueta generica, que podemos
+agrear en el html por cada linea como una clase */
+.texto-centrado {
+    text-align: center;
+}
+
+/* selector por id
+nos permite selecionar elemento unico dentro del sitio
+no se repiten los ids*/
+#logo {
+    width: 100px;
+}
+
+#navegacion {
+    display: inline;
+}
+
+/* el inline solo quito el aspeccto de la lista
+selector convinado
+aqui podemos combinar mas de una opccion para filtrar las etiquetas
+el li ya los puso lado a lado uwu*/
+
+/* selector combinado
+podemos combinar mas de una opccion para ir filtrando las etiquetas */
+#navegacion li {
+    display: inline;
+}
+
+footer{
+    text-align:right;
+}
+
+/* #contacto{ 
+    background-image: url ("imagenes/pres.jpg");
+} */

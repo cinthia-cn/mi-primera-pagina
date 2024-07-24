@@ -1,0 +1,180 @@
+<!-- tipo de documento -->
+<!DOCTYPE html>
+
+<!-- html: etiqueta principal, engloba toda la pagina, nada va fuera de la pagina -->
+<!-- lan: es opccion de lenguaje -->
+<html lang="es">
+
+<!-- head: configuraciones -->
+<!-- conectar archivos, describir archivos, poner tamaños -->
+
+<!-- <style>
+        body {
+            color: beige;
+        }
+
+        h1 {
+            color: brown;
+        }
+    </style> -->
+<!-- el style lo agreamos afuera del head, por buena practica 
+     y porque nos empezamos a adrentrar en el CSS
+     color: nos ayudo a cambiar el color del teto dentro de todoo
+     el cuerpo de la pagina. 
+     h1: probamos otra forma en 2 segmentos de reglas para los stilos-->
+
+<!-- el link de css fue la manera de conectar con el html
+      y va fuera del head -->
+<link rel="stylesheet" href="style.css">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title: titulo de la pagina we -->
+    <title> mi primera pagina </title>
+
+</head>
+
+<!-- body: contenido visible de la pagina -->
+<!-- catalogo de etiqutas -->
+
+<!-- style nos sirvio para agregar stilo/color a la pagina y se agrega dentro den body -->
+<!-- style="background-color: blanchedalmond;" -->
+
+<body>
+<img id="logo" src="https://i.pinimg.com/236x/cc/89/38/cc89387cbe080fae9fe8cb369265c2ca.jpg" alt="logo luna">
+
+    <ul id="navegacion">
+        <li><a href="https://www.instagram.com/eras_mi_musa?igsh=MXUzM2lhNHpmNG01bg==" target="_blank"><i>Sigueme en mis redes. </i> </a></li>
+        <li><a href="https://www.instagram.com/eras_mi_musa?igsh=MXUzM2lhNHpmNG01bg==" target="_blank"><i>Comentarios.</i></a></li>
+        <li><a href="contacto.html"><i>Compartenos tu experiencia.</i></a></li>
+    </ul>
+
+    <!-- stilos de letra
+     b:negritas
+     i: curviado 
+     s: subrayar
+     mark: resaltar-->
+
+    <!-- cabeceras -->
+
+    <!-- el header es como una divicion de organizacion y va todo el contenido de la cabecera de la pagina-->
+    <header>
+        <h1 class="texto-centrado"> <i>¡Hola lectores!</i> </h1>
+        <h1 class="texto-centrado">¿Como estan?</h1>
+    </header>
+
+
+    <p>
+        Pues yo les quiero platicar que me siento muy feliz de tenerlos navegando en esta pagina que
+        ha empezado como un proyecto de convivecia y de compartirles tanto por aqui como en mis redes sociales, mi
+        expericia leyendo
+        libros y que tipos de libros me gustan leer,
+        porque si, hay muchos generos y tu como lector lo sabes
+        en lo personal, me encantan los libros de romance, ya sean tristes, color rosa o con unos finales tan llenos de
+        magia que me
+        hagan alusionar con tener algo asi algun dia.
+        Pero cuentame tu.
+        ¿Que genero literario es el que te transporta a esos mundos tan llenos de magia y cual mundo disfrutas mas?
+
+    </p>
+
+    <!-- pusimos un texto como link que manda a un id, elemento dentro de la pagina -->
+    <!-- el numero de h tiene que ver conel tamaño de letra  pordefecto solo llega hasta h6 -->
+
+    <!-- img: es el codigo para poder agregar imagen, desde la direccion de la imagen web y alt serviria como una etiqueta de identificacion 
+ conocido como atributo, y lo vemos como programadores al igual que un id-->
+
+    <!-- al igual que es header, el main es como una division para organizar
+     son contenedores genericos, no cambian nada en la pagina
+     pero como desarrolladores nos sirve para organizar  -->
+    <main>
+        <p class="texto-centrado">
+            <img id="libro" class="libros" src="https://i.pinimg.com/736x/e7/83/fe/e783fee234985e5aa9c5ab94e1dc8cce.jpg"
+                alt="imagen libro">
+        </p>
+
+        <!-- <img id="rosa"class="libros" width="300"  height="400" src="https://i.pinimg.com/564x/17/8d/31/178d3165e3da4ca0d338e517f07f2927.jpg" alt="imagen rosa"> 
+ la dejamos como comentario, para el proceso de los primeros avances -->
+
+        <!--elementos de tamaño: width es ancho y height es el alto de la imagen 
+como buena practica se agregan al final.-->
+        <!-- el id (identificar elementos) tiene que ser diferente que el otro elemento
+ y la class/clase pueden ser iguales entre elementos -->
+
+        <!-- p es etiqueta para los parrafos y etre las p es un salto de linea
+ si metemos imagenes en el mismo parrafo, se guntaran en la misma linea 
+ en cambio si metemos la etiqueta de imagen fuera del parrafo, quedaran abajo en diferente salto de linea-->
+
+        <!-- <p> ¿De que libro me platicaras hoy? </p>
+        <p> ¿TE EMOCIONA? porque a mi si</p> -->
+
+        <h2 class="texto-centrado">¿De que libro me platicaras hoy? ¿TE EMOCIONA? porque a mi si</h2>
+
+        <p>
+            Como comunidad de lectores somos tan apasionados por la vida, por el amor, por la fantasia. Que nos encanta
+            vivir en mundo tan desconocidos, pero a la vez sin dejar de pisar la tierra.
+            Es dificil, pero cuando te tomas tus 20mn de lectura, son tan inigualables a ninguan otra cosa. Creeme que
+            cuando te digo que somos unos locos apasionados hasta por el miedo... Bueno que te puedo decir, somos
+            unicos, como cada lectura que tenemos en nuestras manos.
+        </p>
+        <h2 class="texto-centrado"> ¿y tu eres nuevo en esta comunidad?</h2>
+
+        <p class="texto-centrado">
+            <img id="rosa" class="libros" src="https://i.pinimg.com/564x/17/8d/31/178d3165e3da4ca0d338e517f07f2927.jpg"
+                alt="imagen rosa">
+        </p>
+
+        <!-- a: es para los links -->
+        <!-- target: _blank es un atibuto que nos ayuda que al abrir link se vayan a otra pestaña y no en la misma -->
+
+        <!-- texto -->
+        <!-- <p>
+            <a href="https://www.instagram.com/eras_mi_musa?igsh=MXUzM2lhNHpmNG01bg==" target="_blank"> @eras_mi_musa
+            </a>
+        </p> -->
+
+        <!-- imagen -->
+        <p class="texto-centrado">
+            <a href="https://www.instagram.com/eras_mi_musa?igsh=MXUzM2lhNHpmNG01bg==" target="_blank">
+                <img id="logo" src="https://i.pinimg.com/474x/38/69/5a/38695a1ff6d6275782aa0048c408382f.jpg"
+                    alt="logo ig">
+
+            </a>
+
+        </p>
+
+        <!-- boton -->
+        <!-- buttun: agregar botones con mismo o diferentes links -->
+        <p class="texto-centrado">
+            <a href="https://www.instagram.com/eras_mi_musa?igsh=MXUzM2lhNHpmNG01bg==" target="_blank">
+                <button>sigueme mi lector lindo</button>
+            </a>
+            <!-- marcando las diferentes formas en las que trabajamos -->
+
+        </p>
+
+        <!-- listas con numero o puntos -->
+        <!-- <ul id="navegacion">
+
+            <li><a href="https://www.instagram.com/eras_mi_musa?igsh=MXUzM2lhNHpmNG01bg==" target="_blank"> perfil de ig
+                </a></li>
+            <li>comentarios</li>
+            <li>compartenos tu experiencia</li>
+        </ul> -->
+
+    </main>
+
+    <!-- pie de pagina -->
+     <footer>
+        <h6> Hecho por cinthia carreon en <i>Tecnolochicas PRO</i> </h6>
+        <h6>
+            <a href="contacto.html"> <i>Contacto</i></h6> </a>
+            
+    </footer>
+
+</body>
+
+</html>
